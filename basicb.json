@@ -1,0 +1,24 @@
+{
+  "id": "/basicb",
+  "cmd": "sleep 99999",
+  "instances": 100,
+  "cpus": 0.01,
+  "mem": 32,
+  "constraints": [
+    [
+      "hostname",
+      "UNIQUE"
+    ]
+  ],
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "ubuntu",
+      "network": "HOST"
+    }
+  },
+  "acceptedResourceRoles": [
+    "*",
+    "slave_public"
+  ]
+}
